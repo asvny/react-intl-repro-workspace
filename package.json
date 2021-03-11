@@ -1,0 +1,20 @@
+{
+  "name": "react-intl-workspaces",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  
+  "workspaces": {
+    "packages": [
+      "invoices",
+      "purchases",
+      "settings",
+      "design-system",
+      "portal"
+    ]
+  },
+  "scripts": {
+    "intl:extract-all": "yarn workspaces run intl:extract"
+  }
+}

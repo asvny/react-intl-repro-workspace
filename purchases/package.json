@@ -1,0 +1,19 @@
+{
+    "name": "@c/purchases",
+    "version": "1.0.0",
+    "main": "index.jsx",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "intl:extract": "formatjs extract '**/*.(js|jsx)' --out-file '.temp/en.json' --format simple --id-interpolation-pattern '[sha512:contenthash:base64:6]'"
+    },
+    "dependencies": {
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "react-intl": "^5.13.2"
+    },
+    "devDependencies": {
+      "@formatjs/cli": "^3.1.6"
+    }
+  }
+  
