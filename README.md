@@ -5,9 +5,9 @@ command to extract the translations to `.temp/en.json` files. So this will be co
 
 _Tip: From root you can run `yarn intl:extract-all` to extract for ALL workspaces._
 
-Now the question is how to combine all the translations from yarn workspaces and node_modules in main portal app.
+Now the question is how to combine (and compile) all the translations from yarn workspaces and node_modules in main portal app.
 
-Currently, running extraction command in `portal` will ONLY extract for that package but how do I do for workspaces ?
+Now after running extraction for all packages .. how do I compile all together into one single file in `portal`?
 
 The way I am solving now is using a custom node script which traverses all workspaces which are dependencies of `portal` and combines them use `@format/cli`.
 
